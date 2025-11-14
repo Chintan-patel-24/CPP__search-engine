@@ -61,3 +61,39 @@ void exactSearch(const unordered_map<string, int>& indexMap, const vector<vector
     }
 }
 
+
+// Main function
+int main() {
+    string filename = "data.csv";
+    vector<vector<string>> data;
+    unordered_map<string, int> indexMap;
+
+    if (!loadCSV(filename, data, indexMap)) {
+        return 1;
+    }
+
+    cout << "CSV loaded successfully!\n";
+
+    while (true) {
+        cout << "\nMenu:\n";
+        cout << "1. Exact Search\n";
+        cout << "2. Exit\n";
+        cout << "Enter your choice: ";
+        int choice;
+        cin >> choice;
+
+        if (choice == 1) {
+            cout << "Enter key for exact search: ";
+            string key;
+            cin >> key;
+            exactSearch(indexMap, data, key);
+        } else if (choice == 2) {
+            cout << "Exiting...\n";
+            break;
+        } else {
+            cout << "Invalid choice. Try again.\n";
+        }
+    }
+
+    return 0;
+}
