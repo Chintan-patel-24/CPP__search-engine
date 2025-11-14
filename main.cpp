@@ -47,3 +47,17 @@ bool loadCSV(const string& filename, vector<vector<string>>& data, unordered_map
     file.close();
     return true;
 }
+
+// Function for exact search
+void exactSearch(const unordered_map<string, int>& indexMap, const vector<vector<string>>& data, const string& key) {
+    if (indexMap.find(key) != indexMap.end()) {
+        int rowIndex = indexMap.at(key);
+        for (const auto& value : data[rowIndex]) {
+            cout << value << " ";
+        }
+        cout << "\n";
+    } else {
+        cout << "No exact match found for key: " << key << "\n";
+    }
+}
+
