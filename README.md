@@ -1,7 +1,6 @@
 <div align=center>
 
 ## Search Engine Project
-
 </div>
 
 ---
