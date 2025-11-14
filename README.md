@@ -1,4 +1,4 @@
-## Search Engine Project !!
+## Search Engine Project.
 
 This project is a simple search engine implemented in C++. It loads a CSV file into memory and allows the user to perform exact searches on the data using a key. The program utilizes an unordered map to efficiently map primary keys to their respective row indices for quick lookup.
 
