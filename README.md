@@ -15,8 +15,6 @@ This project is a simple search engine implemented in C++. It loads a CSV file i
 3. [Code Explanation](#code-explanation)
     - [Helper Functions](#helper-functions)
     - [Main Function](#main-function)
-4. [Sample Output](#sample-output)
-5. [About Me](#about-me)
 
 ## Data Loading and Storage
 
